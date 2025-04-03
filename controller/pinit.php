@@ -1,5 +1,5 @@
 <?php
-//heyyyyyyyyy
+//heyyyyyyyyyyyyyyy
 session_start(); 
 
 //Check if this client is authenticated (logged in)
@@ -120,5 +120,6 @@ else
 		$commentList = "<h2> No comments found</h2>";
 	include("view/header.php");
 	include("view/default_view.php");
+	echo "Hello everyone this is a test for git";
 }
 ?>

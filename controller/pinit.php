@@ -1,4 +1,5 @@
 <?php
+//heyyyyyyyyy
 session_start(); 
 
 //Check if this client is authenticated (logged in)

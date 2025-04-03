@@ -1,0 +1,225 @@
+body {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #15202b; /* Dark blue-gray background like Twitter dark mode */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: block;
+    max-width: 800px; /* Wider container for social media layout */
+    width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #dae0e6; /* Light gray background for Reddit-like feel */
+    border: none;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #ff4500; /* Reddit orange for the header */
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #38444d; /* Darker divider */
+}
+
+label {
+    width: 10em;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    color: #333; /* Darker text for labels */
+    font-weight: 500;
+}
+
+#data input {
+    float: left;
+    width: 15em;
+    margin-bottom: .5em;
+    padding: 8px;
+    border: 1px solid #38444d; /* Dark gray border */
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ffffff; /* White text in inputs */
+    background-color: #253341; /* Darker input background */
+}
+
+#data input:focus {
+    outline: none;
+    border-color: #1da1f2; /* Twitter blue on focus */
+    background-color: #192734; /* Slightly lighter on focus */
+}
+
+#data span {
+    padding-left: .25em;
+    color: #8899a6; /* Light gray for secondary text */
+}
+
+#buttons input {
+    margin-bottom: .5em;
+    padding: 8px 16px;
+    background-color: #1da1f2; /* Twitter blue for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#buttons input:hover {
+    background-color: #1a91da; /* Darker blue on hover */
+}
+
+br {
+    clear: left;
+}
+
+/* New styles for navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #192734; /* Dark background for nav */
+    border-bottom: 1px solid #38444d; /* Divider line */
+}
+
+nav a {
+    color: #1da1f2; /* Twitter blue for links */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #1a91da; /* Darker blue on hover */
+}
+
+/* New styles for user posts */
+.post {
+    margin: 20px 0;
+    padding: 15px;
+    background: #253341; /* Darker background for posts */
+    border: 1px solid #38444d;
+    border-radius: 8px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circular profile picture */
+    margin-right: 10px;
+}
+
+.post-header .username {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.post-content {
+    color: #e1e8ed; /* Light text for post content */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* New styles for form */
+form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #ffffff; /* White background for the form */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+}
+
+form label {
+    width: 10em;
+    float: left;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    color: #333; /* Darker text for labels */
+    font-weight: 500;
+}
+
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #f9f9f9; /* Light background for inputs */
+}
+
+form input[type="submit"] {
+    background-color: #ff4500; /* Reddit orange for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e03d00; /* Darker orange on hover */
+}
+
+/* New styles for comment section */
+.comment-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff; /* White background for comments */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 8px;
+}
+
+.comment {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f9f9f9; /* Light background for individual comments */
+    border: 1px solid #ddd; /* Slightly darker border for comments */
+    border-radius: 4px;
+}
+
+.comment .username {
+    font-weight: bold;
+    color: #0079d3; /* Reddit blue for usernames */
+}
+
+.comment .content {
+    margin-top: 5px;
+    color: #333; /* Darker text for comment content */
+}
+
+.comment .timestamp {
+    font-size: 12px;
+    color: #888; /* Gray text for timestamps */
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    main {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
